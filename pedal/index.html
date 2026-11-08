@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bisikletçi Pedal · Sahilde bisiklet tamiri ve kiralama</title>
+  <meta name="description" content="Bisikletçi Pedal: sahil yolunda bisiklet kiralama ve tamir. Kask ve kilit ücretsiz.">
+  <link rel="stylesheet" href="ortak/stil.css">
+</head>
+<body>
+  <!-- Sayfa sahibi: Sude Naz Altın · Ana sayfa ve proje koordinasyonu
+       Beş kutu (Flexbox): 1 üst bant · 2 kahraman · 3 kartlar · 4 içerik + yan sütun · 5 alt bilgi -->
+  <a class="skip" href="#icerik">İçeriğe geç</a>
+
+  <!-- 1. ÜST BANT -->
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="logo" href="index.html"><span aria-hidden="true">🚲</span> Bisikletçi Pedal</a>
+      <nav aria-label="Ana menü">
+        <ul>
+          <li><a href="index.html" aria-current="page">Ana sayfa</a></li>
+          <li><a href="kiralama.html">Kiralama</a></li>
+          <li><a href="tamir.html">Tamir</a></li>
+          <li><a href="hakkimizda.html">Hakkımızda</a></li>
+          <li><a href="iletisim.html">İletişim</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="icerik">
+    <!-- 2. KAHRAMAN -->
+    <section class="hero">
+      <div class="wrap">
+        <div class="hero-text">
+          <h1>Sahil yolunda bisiklet kirala, bisikletini tamir ettir.</h1>
+          <p class="lead">Gençler, aileler ve hafta sonu bisikletçileri için. Telefonunuzdan bakın, hemen gelin.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="kiralama.html">Kiralama fiyatları</a>
+            <a class="btn btn-ghost" href="tamir.html">Tamir hizmetleri</a>
+          </div>
+        </div>
+        <svg class="hero-art" viewBox="0 0 320 180" aria-hidden="true" focusable="false">
+          <circle cx="70" cy="120" r="44" fill="none" stroke="#083A67" stroke-width="8"/>
+          <circle cx="250" cy="120" r="44" fill="none" stroke="#083A67" stroke-width="8"/>
+          <path d="M70 120 L130 60 L210 60 L250 120 M130 60 L160 120 L70 120 M160 120 L210 60 M118 50 h28 M206 48 l8 -14 h22"
+                fill="none" stroke="#0B4F8A" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- 3. KARTLAR -->
+    <section class="wrap section" aria-labelledby="kartlar-baslik">
+      <h2 id="kartlar-baslik">Ne arıyorsunuz?</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Bisiklet kirala</h3>
+          <p>Şehir, dağ ve çocuk bisikleti. Saatlik, günlük, haftalık fiyatlar tek tabloda.</p>
+          <p><a href="kiralama.html">Kiralama fiyatları</a></p>
+        </article>
+        <article class="card">
+          <h3>Bisikletini tamir ettir</h3>
+          <p>Lastik tamirinden genel bakıma; fiyat ve yaklaşık süre baştan belli.</p>
+          <p><a href="tamir.html">Tamir hizmetleri</a></p>
+        </article>
+        <article class="card">
+          <h3>Kask ve kilit ücretsiz</h3>
+          <p><span aria-hidden="true">✔</span> Her kiralamada kask ve kilit yanınızda, ek ücret yok.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 4. İÇERİK + YAN SÜTUN -->
+    <section class="wrap section" aria-label="Fiyatlar ve tamir">
+      <div class="layout">
+        <div class="layout-main">
+          <h2>Kiralama fiyatları</h2>
+          <ul class="list-clean">
+            <li><span>Şehir bisikleti</span> <span class="price">saatlik 80 TL · günlük 350 TL</span></li>
+            <li><span>Dağ bisikleti</span> <span class="price">saatlik 120 TL · günlük 500 TL</span></li>
+            <li><span>Çocuk bisikleti</span> <span class="price">saatlik 60 TL</span></li>
+          </ul>
+          <div class="note">
+            <strong><span aria-hidden="true">ℹ</span> Hafta sonu erken gelin</strong>
+            Hafta sonları kiralık bisikletlerin hepsi tükeniyor. Müsait / dolu durumunu kiralama sayfasında görebilirsiniz.
+          </div>
+          <p><a class="btn btn-primary" href="kiralama.html">Tüm fiyatlar ve durum</a></p>
+        </div>
+
+        <aside class="layout-side card" aria-labelledby="yan-baslik">
+          <h2 id="yan-baslik">Tamir</h2>
+          <ul class="list-clean">
+            <li><span>Lastik tamiri</span> <span class="price">150 TL · 20 dk</span></li>
+            <li><span>Genel bakım</span> <span class="price">600 TL · 1 gün</span></li>
+          </ul>
+          <p><a href="tamir.html">Tamir hizmetlerini gör</a></p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- 5. ALT BİLGİ -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <p><strong>Bisikletçi Pedal</strong> · Sahil yolu · Bisiklet tamiri ve kiralama</p>
+      <p class="small">© 2026 Bisikletçi Pedal · Ders projesi</p>
+    </div>
+  </footer>
+</body>
+</html>
