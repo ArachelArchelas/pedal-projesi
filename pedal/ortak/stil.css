@@ -120,11 +120,13 @@ a:hover { color: var(--brand-dark); }
 .btn-primary:hover { background: #FFC12E; color: var(--accent-ink); }
 .btn-ghost { background: #fff; color: var(--brand-dark); border-color: var(--brand-dark); }
 .btn-ghost:hover { background: var(--paper); color: var(--brand-dark); }
+/* ---------- Kartlar: CSS Grid ---------- */
 
-/* ---------- Kartlar ---------- */
-/* Kartlar: Flexbox + wrap; dar ekranda alt satıra geçer, yatay kaydırma çıkmaz */
-.grid { display: flex; flex-wrap: wrap; gap: 16px; }
-.grid > * { flex: 1 1 240px; min-width: 0; }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
 
 /* İçerik + yan sütun */
 .layout { display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start; }
